@@ -29,3 +29,4 @@ Cart.prototype.saveToLocalStorage = function () {
 Cart.prototype.removeItem = function(item) {
   this.items.splice(item,1);
 };
+
