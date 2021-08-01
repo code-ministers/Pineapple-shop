@@ -20,7 +20,7 @@ Toy.prototype.boyToy = function(gender){
 
 Toy.prototype.girlToy = function(gender){
   if(gender==='g'){
-    Toy.boysToys.push(this);
+    Toy.girlsToys.push(this);
   }
 };
 

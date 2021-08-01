@@ -1,20 +1,20 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/stylesheet.css">
+
+    <link rel="style" href="css/style.css">
+
     <title>Home</title>
 
-    <style>
-        table, th, td {
-          border: 1px solid black;
-          border-collapse: collapse;
-        }
-        </style>
 
 </head>
+
 <body>
     <header>
         <div id="logo">
@@ -39,63 +39,99 @@
                 </li>
             </ul>
         </nav>
-        <h1>Header</h1>
+        <h1>Welcome To Your Cart </h1>
+        <h2>Here Is A List Of All The Products You Buy ! </h2>
+
     </header>
     <main>
+
+
         <div>
-            <img src="" alt="" id="slide-show">
-        </div>
-        <div>
-            <p>add description</p>
+
+
         </div>
 
-  <br> 
+        <br>
         <table style="width:50%" id="cartTable">
-            
+
             <tr>
-              <th>Number</th>
-              <th>Product</th> 
-              <th>Quantity</th>
-              <th>Remove</th>
+                <th>Number</th>
+                <th>Product</th>
+                <th>Quantity</th>
+                <th>Remove</th>
 
             </tr>
-    <!-- generate this from js for each added item: -->  
+            <!-- generate this from js for each added item: -->
             <!-- <tr>
               <td></td>
               <td></td>
               <td</td>
               <td</td>
             </tr> -->
-        
-          </table>
 
-<br>
+        </table>
 
+        <br>
 
-<button onclick="confirmAlert()">Confirm Buy</button>  
+        <form id="contact">
+            <fieldset>
 
+                <label for="adding name">Please Add Your Full Name </label>
+                <br>
+                <br>
 
-<br>
+                First : <input type="text" name="firt" id="first">
+                Second : <input type="text" name="second" id="second">
+                Family : <input type="text" name="family" id="family">
+                <br>
+                <br>
 
-
-<div id="cartContant"> 
-     <!-- generate  from js for each item contant: -->  
-
-</div> 
-
-<br>
-
-<h2>Remember othe world child..............etc<h2> 
-
-    <button onclick="DonateAlert()">Donate 1 $ </button>  
-    
-    <h2> Draw Smile !</h2>
-
+                <label for="adding max">Please Add Your Phone Number:</label>
+                <br>
+                <br>
+                Local Key : <input type="number" name="localKey" id="localKey">
+                Your Number :<input type="number" name="phone" id="phone">
 
 
+                <br>
+                <br>
+                <label for="email">Please Add Your E-Mail :</label>
+                <input type="email" name="email" id="email">
+                <br>
+                <br>
+                <label for="text">Please Add Your Adress :</label>
+                <input type="text" name="Adress" id="Adress">
+
+                <br>
+                <br>
 
 
-        
+            </fieldset>
+        </form>
+
+        <button id='confirmAlert' onclick="alert('Thank You for your buy <3')">Confirm Buy</button>
+
+
+        <br>
+
+
+        <div id="cartContant">
+            <!-- generate  from js for each item contant: -->
+
+        </div>
+
+        <br>
+
+        <h2>Remember the world child and give a wonderful gift for a lucky child !<h2>
+
+                <button id='DonateAlert' onclick="alert('Thank You for your generous donate <3')">Donate 1 $ </button>
+                <h2> Draw Smile !</h2>
+
+
+
+
+
+
     </main>
 
     <footer>
@@ -126,8 +162,10 @@
             </a>
         </nav>
         <p> Copy Right By code-ministers &copy; </p>
-
+        <script src="js/cart.js">
+        </script>
     </footer>
 
 </body>
+
 </html>
