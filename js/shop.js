@@ -1,10 +1,26 @@
-const Toy = function(name,src,price) {
+const Toy = function(name,src,price,gender) {
   this.name = name;
   this.src = src;
   this.price=price;
+  this.boyToy(gender);
+  this.girlToy(gender);
   Toy.all.push(this);
 };
 Toy.all = [];
+Toy.boysToys=[];
+Toy.girlsToys=[];
+
+Toy.prototype.boyToy = function(gender){
+  if(gender==='b'){
+    Toy.boysToys.push(this);
+  }
+};
+
+Toy.prototype.girlToy = function(gender){
+  if(gender==='g'){
+    Toy.boysToys.push(this);
+  }
+};
 
 const Cart = function(items) {
   this.items = items;
