@@ -1,6 +1,7 @@
-const Toy = function(name,src) {
+const Toy = function(name,src,price) {
   this.name = name;
   this.src = src;
+  this.price=price;
   Toy.all.push(this);
 };
 Toy.all = [];
@@ -29,5 +30,3 @@ Cart.prototype.removeItem = function(item) {
   this.items.splice(item,1);
 };
 
-new Toy('blue-elephant','img/boy/blue-elephant.png');
-new Toy('blue-elephant','img/boy/blue-elephant.png');
