@@ -48,6 +48,7 @@ Cart.prototype.removeItem = function (item) {
   this.items.splice(item, 1);
 };
 
+
 function generateProduct() {
   new Toy('blue-elephant', '/img/boy/blue-elephant.png', '5JD', 'b');
   new Toy('building-blocks', '/img/boy/building-blocks.png', '4JD', 'b');
@@ -76,3 +77,4 @@ function generateProduct() {
 }
 
 generateProduct();
+
