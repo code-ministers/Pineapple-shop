@@ -39,6 +39,8 @@ Cart.prototype.addItem = function (toy, quantity) {
 
 };
 
+
+
 Cart.prototype.saveToLocalStorage = function () {
   let stringArr = JSON.stringify(this.items);
   localStorage.setItem('cart', stringArr);
@@ -77,4 +79,5 @@ function generateProduct() {
 }
 
 generateProduct();
+
 
