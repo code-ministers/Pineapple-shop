@@ -24,14 +24,18 @@ Toy.prototype.girlToy = function(gender){
   }
 };
 
-const Cart = function (items) {
-  this.items = items;
-};
 
 const CartItem = function (toy, quantity) {
   this.toy = toy;
   this.quantity = quantity;
 };
+
+const Cart = function (items) {
+  this.items = items;
+};
+
+
+
 
 Cart.prototype.addItem = function (toy, quantity) {
   let newItem = new CartItem(toy, quantity);
@@ -49,6 +53,9 @@ Cart.prototype.saveToLocalStorage = function () {
 Cart.prototype.removeItem = function (item) {
   this.items.splice(item, 1);
 };
+
+
+
 
 
 function generateProduct() {
