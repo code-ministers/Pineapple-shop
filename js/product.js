@@ -1,5 +1,5 @@
 
-'use strict';
+
 //slied show
 
 
@@ -8,7 +8,7 @@
 
 //render fun
 
-  function  renderFun (){
+ /* function  renderFun (){
 
 // Toy.all;
 //render fun
@@ -26,7 +26,7 @@
     }
 }
 
-renderFun();
+renderFun();*/
 
    // let lableEl=document.getElementById('filter');
 
