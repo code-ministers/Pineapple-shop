@@ -81,10 +81,10 @@ function generateProduct() {
 
 generateProduct();
 
-
+let imageEl = document.getElementById('images');
 function renderFunction() {
 
-  let imageEl = document.getElementById('images');
+  
 
   for (let i = 0; i < Toy.all.length; i++) {
     // console.log(Toy.all[i]);
@@ -100,26 +100,34 @@ function renderFunction() {
     // console.log(Toy.all[i].name + "   " +  Toy.all[i].price);
     // console.log(dataDescr);
   }
+  
 }
 
 renderFunction();
 
-let lableEl = document.getElementById('filter');
+let lableEl = document.getElementById('mySelect');
 
-lableEl.addEventListener('select', forSelection);
+lableEl.addEventListener('click', forSelection);
 
 function forSelection(event) {
   event.preventDefault();
-  Toy.all = 0;
-  let boy=event.target.gender.value
-  for (let i = 0; i < Toy.boysToys.length; i++) {
 
+  Toy.all = 0;
+  console.log(Toy.all);
+  // let boy=event.target.gender;
+  for (let i = 0; i < Toy.boysToys.length; i++) {
+    
+    let button=document.createElement('button')
     let dataBoy = document.createElement('img');
     let dataDescr = document.createElement('p')
     imageEl.appendChild(dataBoy);
     imageEl.appendChild(dataDescr);
+    imageEl.appendChild(button);
+    button.textContent='add to cart';
     dataBoy.src =Toy.boysToys[i].src;
     dataDescr.textContent = `${Toy.boysToys[i].name}     ${Toy.boysToys[i].price}`;
+    // console.log(boy);
+    
   }
 
 }
