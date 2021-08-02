@@ -216,6 +216,24 @@ function forSelection(event) {
 getting()
 =======
 
+
+  Toy.all = 0;
+  // console.log(Toy.all);
+  // let boy=event.target.gender;
+  for (let i = 0; i < Toy.boysToys.length; i++) {
+    
+    let button=document.createElement('button')
+    let dataBoy = document.createElement('img');
+    let dataDescr = document.createElement('p')
+    imageEl.appendChild(dataBoy);
+    imageEl.appendChild(dataDescr);
+    imageEl.appendChild(button);
+    button.textContent='add to cart';
+    dataBoy.src =Toy.boysToys[i].src;
+    dataDescr.textContent = `${Toy.boysToys[i].name}     ${Toy.boysToys[i].price}`;
+    // console.log(boy);
+    
+
   }
 
 
