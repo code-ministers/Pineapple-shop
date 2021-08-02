@@ -1,12 +1,13 @@
 'use strict';
 //slied show
+
+
+
+
+
 //render fun
 
-
-
-
-
-  function  renderFunction (){
+  function  renderFun (){
 
     let imageEl=document.getElementById('images');
    
@@ -19,18 +20,14 @@
     }
 }
 
-renderFunction();
+renderFun();
+
    // let lableEl=document.getElementById('filter');
     
     
     //let opatioEl1 = lableEl.options[lableEl.selectedIndex].value;
 
    // let opationEl2 = lableEl.options[lableEl.selectedIndex].;//
-
-
-
-
-
 
 
 //add to card 
