@@ -113,7 +113,7 @@ function forSelection(event) {
   event.preventDefault();
 
   Toy.all = 0;
-  console.log(Toy.all);
+  // console.log(Toy.all);
   // let boy=event.target.gender;
   for (let i = 0; i < Toy.boysToys.length; i++) {
     
