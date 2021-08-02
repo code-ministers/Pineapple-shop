@@ -27,14 +27,30 @@ Toy.prototype.girlToy = function (gender) {
   }
 };
 
+<<<<<<< HEAD
 // const Cart = function (items) {
 //   this.items = items;
 // };
+=======
+>>>>>>> 861e325e389f8211ec534b92ef219add154536ed
 
 // const CartItem = function (toy) {
 //   this.toy = toy;
 
+<<<<<<< HEAD
 // };
+=======
+const Cart = function (items) {
+  this.items = items;
+};
+
+
+
+
+Cart.prototype.addItem = function (toy, quantity) {
+  let newItem = new CartItem(toy, quantity);
+  this.items.push(newItem);
+>>>>>>> 861e325e389f8211ec534b92ef219add154536ed
 
 // Cart.prototype.addItem = function (toy, quantity) {
 //   let newItem = new CartItem(toy, quantity);
@@ -52,6 +68,9 @@ Toy.prototype.girlToy = function (gender) {
 function removeItem(item) {
   this.items.splice(item, 1);
 }
+
+
+
 
 
 function generateProduct() {
