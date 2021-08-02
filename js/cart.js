@@ -65,15 +65,15 @@ console.log(cartTBodyEls);
       cartTBodyEl.appendChild(newRowEl);
 
       
-// let deleteTDEl = document.createElement('td');
-// deleteTDEl.setAttribute('id',testitems[i] );
-// let anchorEl = document.createElement('button');
-// anchorEl.setAttribute('href', '#delete-link');
-// anchorEl.setAttribute('id', testitems[i]);
-// anchorEl.addEventListener('click', removeItemFromCart);
-// anchorEl.textContent = 'Remove';
-// deleteTDEl.appendChild(anchorEl);
-// newRowEl.appendChild(deleteTDEl);
+let deleteTDEl = document.createElement('td');
+deleteTDEl.setAttribute('id',testitems[i] );
+let anchorEl = document.createElement('button');
+anchorEl.setAttribute('href', '#delete-link');
+anchorEl.setAttribute('id', testitems[i]);
+anchorEl.addEventListener('click', removeItemFromCart);
+anchorEl.textContent = 'Remove';
+deleteTDEl.appendChild(anchorEl);
+newRowEl.appendChild(deleteTDEl);
 
     }
   }
@@ -88,7 +88,7 @@ function renderCart()
  {
   loadCart();
   showCart();
-  //clearCart();
+  clearCart();
 }
 
 //TODO: Remove all of the rows (tr) in the cart table11 (tbody)
@@ -123,8 +123,7 @@ function removeItemFromCart(event) {
 
     console.log(itemToRemove);
 
-    for (let i = 0; i < testitems.length; i++)
-    {
+   
       console.log(testitems[i]);
 
       if (testitems[i][0]=== itemToRemove)
@@ -132,7 +131,7 @@ function removeItemFromCart(event) {
         console.log("yes");
         cart.removeItem(testitems[i]);
       }
-    }
+    
     
     cart.saveToLocalStorage();
     renderCart();
