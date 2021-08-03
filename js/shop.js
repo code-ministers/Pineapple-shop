@@ -199,7 +199,6 @@ function forSelection() {
 
     button.textContent = 'add to cart';
     dataBoy.src = Toy.boysToys[i].src;
-<<<<<<< HEAD
     let object = Toy.boysToys[i];
     // console.log(object);
     button.addEventListener('click', handleSubmitBoys);
@@ -212,18 +211,6 @@ function forSelection() {
       store();
     }
     dataDescr.textContent = `${Toy.boysToys[i].name}    ${Toy.boysToys[i].price}`;
-=======
-    dataBoy.className='boyProducts';
-
-  //   dataDescr3.textContent = `${this.name}`;
-  // dataDescr4.textContent = `Price : ${this.price}  JD `;
-
-  dataDescr3.textContent = `${Toy.boysToys[i].name}`;
-  dataDescr4.textContent =  `Price :  ${Toy.boysToys[i].price}  JD `;
-
-
-    // dataDescr.textContent = `${Toy.boysToys[i].name}    ${Toy.boysToys[i].price}`;
->>>>>>> f72f08e4c57140ceafbeeb625bba312182afda9d
     console.log(Toy.boysToys);
   }
 
@@ -259,7 +246,6 @@ function forSelection2() {
 
     button.textContent = 'add to cart';
     dataGirl.src = Toy.girlsToys[i].src;
-<<<<<<< HEAD
     let object = Toy.girlsToys[i];
     console.log(object);
     // console.log(object);
@@ -273,28 +259,9 @@ function forSelection2() {
       store();
     }
     dataDescr2.textContent = `${Toy.girlsToys[i].name}       ${Toy.girlsToys[i].price}`;
-=======
-    dataGirl.className='girlProducts';
-
-
-    // dataDescr5.textContent = `${this.name}`;
-    // dataDescr6.textContent = `Price : ${this.price}  JD `;
-
- dataDescr5.textContent = `${Toy.girlsToys[i].name}`;       
- dataDescr6.textContent = `Price :  ${Toy.girlsToys[i].price}  JD `;
-
-    // dataDescr2.textContent = `${Toy.girlsToys[i].name}       ${Toy.girlsToys[i].price}`;
->>>>>>> f72f08e4c57140ceafbeeb625bba312182afda9d
 
   }
   // lableEl.removeEventListener('change', forSelection2);
 
 }
-<<<<<<< HEAD
 getting();
-=======
-
-
-
-
->>>>>>> f72f08e4c57140ceafbeeb625bba312182afda9d
