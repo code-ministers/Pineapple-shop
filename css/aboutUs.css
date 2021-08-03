@@ -1,5 +1,6 @@
 h2 {
     text-align: center;
+    font-family: fantasy;
 }
 p{
     margin: auto;
@@ -17,34 +18,55 @@ body{
     margin: auto;
     width: 50%;
     padding: 10px;
+    border-radius: 20%;
+    font-family:fantasy;
 }
 #mission{
     background-color: F7EA00;
+    border-radius: 20%;
     margin-top: 20px;
-    margin-left: 469px;
+    margin-left: 460px;
+    margin-bottom: 70px;
     width: 50%;
     padding: 10px;
+    font-family:fantasy;
 
 }
-.team img{
-    float: left;
-    width: 15%;
-    padding: 0px;
-    display: inline;
-}
+#aboutUsEl{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 90px;
+    margin-left: 80px;
 
+}
+  
 #ahmad img{
     border-radius: 50%;
+    width: 250px;
+    height: 300px;
 }
 #amani img{
     border-radius: 50%;
+    width: 250px;
+    height: 300px;
+    
 }
 #hala img{
     border-radius: 50%;
+    width: 250px;
+    height: 300px;
 }
 #alaa img{
     border-radius: 50%;
+    width: 250px;
+    height: 300px;
 }
 #mohammad img{
     border-radius: 50%;
+    width: 250px;
+    height: 300px;
+}
+h4{
+    text-align: justify;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
