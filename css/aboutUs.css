@@ -1,0 +1,50 @@
+h2 {
+    text-align: center;
+}
+p{
+    margin: auto;
+    width: 50%;
+    padding: 10px;
+    font-size: 16pt;
+    color: BE0000;
+    text-align: justify;
+}
+body{
+    background-color:9EDE73 ;
+}
+#vision{
+    background-color: F7EA00;
+    margin: auto;
+    width: 50%;
+    padding: 10px;
+}
+#mission{
+    background-color: F7EA00;
+    margin-top: 20px;
+    margin-left: 469px;
+    width: 50%;
+    padding: 10px;
+
+}
+.team img{
+    float: left;
+    width: 15%;
+    padding: 0px;
+    display: inline;
+}
+
+#ahmad img{
+    border-radius: 50%;
+}
+#amani img{
+    border-radius: 50%;
+}
+#hala img{
+    border-radius: 50%;
+}
+#alaa img{
+    border-radius: 50%;
+}
+#mohammad img{
+    border-radius: 50%;
+}
