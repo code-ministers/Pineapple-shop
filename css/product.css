@@ -45,7 +45,7 @@ div p{
     text-align: center;
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
     font-size: x-large;
-    color: deeppink;
+    color: green;
     }
 
 div button{
@@ -57,4 +57,12 @@ font-family: 'Indie Flower', cursive;
 text-shadow: 4px 4px 4px #aaa;
 color: blueviolet;
 font-size: xx-large;
+}
+.B{
+    color: skyblue;
+    
+}
+.G{
+    color: hotpink;
+
 }

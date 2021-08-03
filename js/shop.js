@@ -186,7 +186,10 @@ function forSelection(event) {
     let boyDiv = document.createElement('div');
     let dataBoy = document.createElement('img');
     let dataDescr3 = document.createElement('p');
+    dataDescr3.setAttribute('class','B')
     let dataDescr4 = document.createElement('p');
+    dataDescr4.setAttribute('class','B')
+
     let button = document.createElement('button');
     imageEl.appendChild(boyDiv);
     boyDiv.appendChild(dataBoy);
@@ -226,7 +229,11 @@ function forSelection2(event) {
     let girlDiv = document.createElement('div');
     let dataGirl = document.createElement('img');
     let dataDescr5 = document.createElement('p');
+    dataDescr5.setAttribute('class','G')
+
     let dataDescr6 = document.createElement('p');
+    dataDescr6.setAttribute('class','G')
+
     let button = document.createElement('button');
 
     imageEl.appendChild(girlDiv);
