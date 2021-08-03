@@ -18,11 +18,12 @@ p{
 }
 body{
     background-color:rgb(230, 217, 193) ;
+   
 }
 @keyframes example {
     0%   {left:0px; top:0px;}
-    25%  {left:200px; top:0px;}
-    50%  {left:200px; top:200px;}
+    25%  {left:800px; top:0px;}
+    50%  {left:800px; top:200px;}
     75%  {left:0px; top:200px;}
     100% {left:0px; top:0px;}
   }
@@ -37,35 +38,35 @@ body{
     font-family:fantasy;
     position: relative;
     animation-name: example;
-    animation-duration: 3s;
+    animation-duration: 10s;
   animation-timing-function: linear;
-  animation-delay: 1s;
+  animation-delay: 5s;
   animation-iteration-count: infinite;
   animation-direction: alternate;
 }
 
 
 @keyframes example1 {
-    100%   {left:0px; top:0px;}
-    75%  {left:200px; top:0px;}
-    50%  {left:200px; top:200px;}
-    25%  {left:0px; top:200px;}
-    0% {left:0px; top:0px;}
+    0%   {right:0px; top:0px;}
+    25%  {right: 800px; top:0px;}
+    50%  {right:800px; top:200px;}
+    75%  {right:0px; top:200px;}
+    100% {right:0px; top:0px;}
   }
 #mission{
     background-color: rgb(228, 176, 79);
     border-radius: 60%;
     margin-top: 70px;
-    margin-left: 700px;
+    margin-left: 880px;
     margin-bottom: 100px;
     width: 50%;
     padding: 20px;
     font-family:fantasy;
     position: relative;
-    animation-name: example;
-    animation-duration: 3s;
+    animation-name: example1;
+    animation-duration: 10s;
   animation-timing-function: linear;
-  animation-delay: 1s;
+  animation-delay: 5s;
   animation-iteration-count: infinite;
   animation-direction: alternate;
 }
