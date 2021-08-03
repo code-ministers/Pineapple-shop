@@ -153,6 +153,7 @@ for (let i = 0; i < Toy.all.length; i++) {
 
 // let lableEl = document.getElementById('mySelect');
 
+<<<<<<< HEAD
 //lableEl.addEventListener('change', forSelection);
 
 
@@ -175,6 +176,46 @@ for (let i = 0; i < Toy.all.length; i++) {
 //     dataBoy.src = Toy.boysToys[i].src;
 //     dataDescr.textContent = `${Toy.boysToys[i].name}    ${Toy.boysToys[i].price}`;
 //     console.log(Toy.boysToys);
+=======
+function forSelection() {
+  //event.preventDefault();
+  imageEl.innerHTML = ' ';
+  //console.log(Toy.boysToys);
+  //Toy.all = [];
+  //console.log(Toy.all);
+  // let boy=event.target.gender;
+  for (let i = 0; i < Toy.boysToys.length; i++) {
+
+    let boyDiv = document.createElement('div');
+    let dataBoy = document.createElement('img');
+    let dataDescr3 = document.createElement('p');
+    dataDescr3.setAttribute('class','B')
+    let dataDescr4 = document.createElement('p');
+    dataDescr4.setAttribute('class','B')
+
+    let button = document.createElement('button');
+    imageEl.appendChild(boyDiv);
+    boyDiv.appendChild(dataBoy);
+    boyDiv.appendChild(dataDescr3);
+    boyDiv.appendChild(dataDescr4);
+    boyDiv.appendChild(button);
+
+    button.textContent = 'add to cart';
+    dataBoy.src = Toy.boysToys[i].src;
+    let object = Toy.boysToys[i];
+    // console.log(object);
+    button.addEventListener('click', handleSubmitBoys);
+    function handleSubmitBoys() {
+      object.quantity++;
+      if (!selectedArray.includes(object)) {
+        console.log('found');
+        selectedArray.push(object);
+      }
+      store();
+    }
+ 
+    dataBoy.className='boyProducts';
+>>>>>>> 6c9c559b43557df94bd33aa0e3e94dea2562b891
 
   //   dataDescr3.textContent = `${this.name}`;
   // dataDescr4.textContent = `Price : ${this.price}  JD `;
@@ -202,6 +243,7 @@ for (let i = 0; i < Toy.all.length; i++) {
 // }
 getting();
 
+<<<<<<< HEAD
 
 // Toy.all = 0;
 // // console.log(Toy.all);
@@ -217,15 +259,86 @@ getting();
 //   dataBoy.src =Toy.boysToys[i].src;
 //   dataDescr.textContent = `${Toy.boysToys[i].name}     ${Toy.boysToys[i].price}`;
 //   // console.log(boy);
+=======
+    // dataDescr.textContent = `${Toy.boysToys[i].name}    ${Toy.boysToys[i].price}`;
+
+    console.log(Toy.boysToys);
+  }
+
+}
+
+
+
+//lableEl = document.getElementById('mySelect');
+
+//lableEl.addEventListener('change', forSelection2);
+
+function forSelection2() {
+  // event.preventDefault();
+  imageEl.innerHTML = ' ';
+  //console.log (Toy.boysToys);
+  for (let i = 0; i < Toy.girlsToys.length; i++) {
+
+    let girlDiv = document.createElement('div');
+    let dataGirl = document.createElement('img');
+    let dataDescr5 = document.createElement('p');
+    dataDescr5.setAttribute('class','G')
+
+    let dataDescr6 = document.createElement('p');
+    dataDescr6.setAttribute('class','G')
+
+    let button = document.createElement('button');
+
+    imageEl.appendChild(girlDiv);
+    girlDiv.appendChild(dataGirl);
+    girlDiv.appendChild(dataDescr5);
+    girlDiv.appendChild(dataDescr6);
+    girlDiv.appendChild(button);
+
+    button.textContent = 'add to cart';
+    dataGirl.src = Toy.girlsToys[i].src;
+
+    let object = Toy.girlsToys[i];
+    console.log(object);
+    // console.log(object);
+    button.addEventListener('click', handleSubmitGirls);
+    function handleSubmitGirls() {
+      object.quantity++;
+      if (!selectedArray.includes(object)) {
+        console.log('found');
+        selectedArray.push(object);
+      }
+      store();
+    }
+
+    dataGirl.className='girlProducts';
+
+
+    // dataDescr5.textContent = `${this.name}`;
+    // dataDescr6.textContent = `Price : ${this.price}  JD `;
+
+ dataDescr5.textContent = `${Toy.girlsToys[i].name}`;       
+ dataDescr6.textContent = `Price :  ${Toy.girlsToys[i].price}  JD `;
+
+    // dataDescr2.textContent = `${Toy.girlsToys[i].name}       ${Toy.girlsToys[i].price}`;
+
+>>>>>>> 6c9c559b43557df94bd33aa0e3e94dea2562b891
 
 // }
 
+<<<<<<< HEAD
+=======
+}
+
+getting();
+>>>>>>> 6c9c559b43557df94bd33aa0e3e94dea2562b891
 
 
 //let lableEl = document.getElementById('mySelect');
 
 //lableEl.addEventListener('change', forSelection2);
 
+<<<<<<< HEAD
 // function forSelection2(event) {
 //   event.preventDefault();
 //   imageEl.innerHTML = " ";
@@ -246,3 +359,7 @@ getting();
 //   // lableEl.removeEventListener('change', forSelection2);
 
 // }
+=======
+
+
+>>>>>>> 6c9c559b43557df94bd33aa0e3e94dea2562b891
