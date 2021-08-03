@@ -1,0 +1,60 @@
+.allProducts{
+    width: 450px;
+    height: 350px;
+    display: flex;
+    flex-wrap: wrap
+
+}
+
+.boyProducts{
+    width: 450px;
+    height: 350px;
+    display: flex;
+    flex-wrap: wrap
+
+ }
+
+.girlProducts{
+    width: 450px;
+    height: 350px;
+    display: flex;
+    flex-wrap: wrap
+
+}
+
+#images{
+    
+    display: flex;
+    flex-wrap: wrap;
+    position: relative;
+    margin-left: 15px;
+
+}
+
+div img{
+box-shadow: rgba(0, 191, 255, 0.986);
+padding-left: 20px;
+padding-right: 20px;
+padding-top: 20px;
+padding-bottom: 20px;
+
+
+}
+
+div p{
+    text-align: center;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: x-large;
+    color: deeppink;
+    }
+
+div button{
+margin-left: 200px;}
+
+main h1{
+text-align: center;
+font-family: 'Indie Flower', cursive;
+text-shadow: 4px 4px 4px #aaa;
+color: blueviolet;
+font-size: xx-large;
+}
