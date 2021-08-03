@@ -4,10 +4,10 @@
 
 1. **Ahmad Bani-Salameh**
 2. **mohmmed aljedayh**
-3. **Amani Mousa**
+3. **Alaa' Marei**
 4. **hala mahmoud**
-5. **Alaa' Marei**
-6. **Ahmad Jihad almahaini**
+5. **Amani Mousa**
+
 
 ## Description 
 
