@@ -14,10 +14,9 @@ function getRandomIndex() {
 
 function renderdrawings(){
   let index = getRandomIndex();
-  console.log(index);
   let img = document.createElement('img');
   drawings.appendChild(img);
-  img.src= drawingsArr[getRandomIndex()];
+  img.src= drawingsArr[index];
 }
 
 renderdrawings();
