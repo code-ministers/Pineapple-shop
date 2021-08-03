@@ -14,9 +14,9 @@ let totalPrice=0;
 function loadCart() {
 
   cartItems = JSON.parse(localStorage.getItem('cart')) || [];
- }
- 
- 
+}
+
+
 function renderCart()
 {
  loadCart();
@@ -33,7 +33,7 @@ showCart();
 function clearCart() {
 
   console.log("clearCart");
- 
+
   let tbody= document.querySelector('tbody');
   while(tbody.firstChild){
     tbody.removeChild(tbody.firstChild);
@@ -41,7 +41,7 @@ function clearCart() {
 
 }
 
- 
+
 
 function showCart() {
   // TODO: Find the table11 body
@@ -51,11 +51,11 @@ function showCart() {
   // TODO: Create a TD for the delete link, quantity,  and the item
   // TODO: Add the TR to the TBODY and each of the TD's to the TR
 
-console.log("showcart"); 
+console.log("showcart");
 let cartTBodyEls = document.querySelector('tbody');
 console.log(cartTBodyEls);
 
-    for (let  j = 0; j <cartItems.length; j++) { 
+    for (let  j = 0; j <cartItems.length; j++) {
       //
       let newRowEl = document.createElement('tr');
       cartTBodyEls.appendChild(newRowEl);
@@ -96,7 +96,6 @@ console.log(cartTBodyEls);
 
   //   console.log(totalPrice);
 
-   
   }
 
 

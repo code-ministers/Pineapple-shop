@@ -29,7 +29,7 @@ img {vertical-align: middle;}
 /* Position the "next button" to the right */
 .next {
   right: 0;
-  margin-right: 25%;
+  /* margin-right: 25%; */
   border-radius: 3px 0 0 3px;
 }
 
@@ -66,6 +66,8 @@ img {vertical-align: middle;}
 
 /* Fading animation */
 .fade {
+  margin-left: 15%;
+  margin-top: 30px;
   -webkit-animation-name: fade;
   -webkit-animation-duration: 1.5s;
   animation-name: fade;
@@ -85,4 +87,82 @@ img {vertical-align: middle;}
 /* On smaller screens, decrease text size */
 @media only screen and (max-width: 300px) {
   .prev, .next,.text {font-size: 11px}
+}
+
+video{
+  width: 50%;
+  height: 200px;
+  margin-top: 30px;
+  margin-bottom: 30px;
+  margin-left: 25%;
+  margin-right: 25%;
+}
+body{
+  width: 100vw;
+  background-color: antiquewhite;
+}
+
+#text h2 {
+  font-size: xx-large;
+  font-weight: bold;
+  text-align: center;
+  padding: 20px;
+}
+#text p{
+  text-align: center;
+  
+}
+#text{
+  border-radius: 30px;
+  background-color: rgb(11, 117, 117);
+}
+#text button{
+  margin-left: 42%;
+  margin-bottom: 20px;
+  width: 200px;
+  height: 50px;
+  border: none;
+  color: white;
+  text-align: center;
+  cursor: pointer;
+  border-radius: 40px;
+}
+#saleText{
+  margin-top: 30px;
+  margin-bottom: 30px;
+  text-align: center;
+  font-weight: bolder;
+}
+#onSale{
+  width: 100vw;
+  margin-left: 100px;
+  margin-right: 100px;
+  display: inline-grid;
+  grid-template-columns: repeat(3,1fr);
+  grid-gap: 10px;
+}
+#onSale img{
+  width: 50%;
+  height: 100px;
+}
+#onSale div{
+  padding: 20px;
+  width: 70%;
+  background-color: cornsilk;
+  border-radius: 30px;
+  text-align: center;
+}
+#onSale div button{
+  margin-top: 10px;
+  margin-bottom: 10px;
+  border-radius: 40px;
+  width: 100px;
+  height: 30px;
+  border: none;
+  color: white;
+  text-align: center;
+  cursor: pointer;
+}
+#onSale div p{
+  padding: 3px;
 }
