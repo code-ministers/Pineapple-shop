@@ -1,11 +1,14 @@
 'use strict';
+
+
+
 const Toy = function (name, src, price, gender) {
   this.name = name;
   this.src = src;
   this.price = price;
   this.boyToy(gender);
   this.girlToy(gender);
-  this.quantity=0;
+  this.quantity = 0;
 
   Toy.all.push(this);
 };
@@ -90,7 +93,7 @@ function generateProduct() {
 generateProduct();
 
 let imageEl = document.getElementById('images');
-let selectedArray=[];
+let selectedArray = [];
 
 function store() {
   let stringArr = JSON.stringify(selectedArray);
@@ -98,26 +101,26 @@ function store() {
 }
 
 function getting() {
-  let data =localStorage.getItem('cart');
+  let data = localStorage.getItem('cart');
   if (data) {
-    selectedArray= JSON.parse(data);
+    selectedArray = JSON.parse(data);
 
   }
 }
-Toy.prototype.renderFunction = function() {
+Toy.prototype.renderFunction = function () {
 
   let data = document.createElement('img');
   let dataDescr = document.createElement('p');
-  let button=document.createElement('button');
+  let button = document.createElement('button');
   imageEl.appendChild(data);
   imageEl.appendChild(dataDescr);
   imageEl.appendChild(button);
-  button.textContent='add to cart';
+  button.textContent = 'add to cart';
   data.src = this.src;
-  let object=this;
-  console.log(object);
-  button.addEventListener('click',handleSubmit);
-  function handleSubmit () {
+  let object = this;
+  // console.log(object);
+  button.addEventListener('click', handleSubmit);
+  function handleSubmit() {
     object.quantity++;
 
     if (!selectedArray.includes(object)) {
@@ -136,16 +139,33 @@ for (let i = 0; i < Toy.all.length; i++) {
   Toy.all[i].renderFunction();
 }
 
+function render() {
+  let lableEl = document.getElementById('mySelect');
+  let value = lableEl.options[lableEl.selectedIndex].value;
+  console.log(value);
+  if (value == 'Boys') {
+    //lableEl.addEventListener('change', forSelection);
+    forSelection();
+    console.log('boys event');
+  }
+  else if (value == 'Girls') {
+    //lableEl.addEventListener('change', forSelection2);
+    forSelection2();
+    console.log('girls event');
+  }
+  else {
+    imageEl.innerHTML = ' ';
+    for (let i = 0; i < Toy.all.length; i++) {
+      Toy.all[i].renderFunction();
+    }
+  }
+}
 
-let lableEl = document.getElementById('mySelect');
 
-lableEl.addEventListener('change', forSelection);
-
-
-function forSelection(event) {
-  event.preventDefault();
+function forSelection() {
+  //event.preventDefault();
   imageEl.innerHTML = ' ';
-  console.log(Toy.boysToys);
+  //console.log(Toy.boysToys);
   //Toy.all = [];
   //console.log(Toy.all);
   // let boy=event.target.gender;
@@ -159,72 +179,59 @@ function forSelection(event) {
     imageEl.appendChild(button);
     button.textContent = 'add to cart';
     dataBoy.src = Toy.boysToys[i].src;
+    let object = Toy.boysToys[i];
+    // console.log(object);
+    button.addEventListener('click', handleSubmitBoys);
+    function handleSubmitBoys() {
+      object.quantity++;
+      if (!selectedArray.includes(object)) {
+        console.log('found');
+        selectedArray.push(object);
+      }
+      store();
+    }
     dataDescr.textContent = `${Toy.boysToys[i].name}    ${Toy.boysToys[i].price}`;
     console.log(Toy.boysToys);
-
-
-
-  }
-// lableEl.removeEventListener('change', forSelection); 
-}
-function forSelection(event) {
-  event.preventDefault();
-  Toy.all = 0;
-  // let boy=event.target.gender.value;
-  for (let i = 0; i < Toy.boysToys.length; i++) {
-
-    let dataBoy = document.createElement('img');
-    let dataDescr = document.createElement('p');
-    imageEl.appendChild(dataBoy);
-    imageEl.appendChild(dataDescr);
-    dataBoy.src =Toy.boysToys[i].src;
-    dataDescr.textContent = `${Toy.boysToys[i].name}     ${Toy.boysToys[i].price}`;
   }
 
 }
-getting();
-
-
-Toy.all = 0;
-// console.log(Toy.all);
-// let boy=event.target.gender;
-for (let i = 0; i < Toy.boysToys.length; i++) {
-  let button=document.createElement('button');
-  let dataBoy = document.createElement('img');
-  let dataDescr = document.createElement('p');
-  imageEl.appendChild(dataBoy);
-  imageEl.appendChild(dataDescr);
-  imageEl.appendChild(button);
-  button.textContent='add to cart';
-  dataBoy.src =Toy.boysToys[i].src;
-  dataDescr.textContent = `${Toy.boysToys[i].name}     ${Toy.boysToys[i].price}`;
-  // console.log(boy);
-
-}
 
 
 
-//let lableEl = document.getElementById('mySelect');
+//lableEl = document.getElementById('mySelect');
 
-lableEl.addEventListener('change', forSelection2);
+//lableEl.addEventListener('change', forSelection2);
 
-function forSelection2(event) {
-  event.preventDefault();
-  imageEl.innerHTML = " ";
+function forSelection2() {
+  // event.preventDefault();
+  imageEl.innerHTML = ' ';
   //console.log (Toy.boysToys);
   for (let i = 0; i < Toy.girlsToys.length; i++) {
 
     let button = document.createElement('button');
     let dataGirl = document.createElement('img');
-    let dataDescr = document.createElement('p');
+    let dataDescr2 = document.createElement('p');
     imageEl.appendChild(dataGirl);
-    imageEl.appendChild(dataDescr);
+    imageEl.appendChild(dataDescr2);
     imageEl.appendChild(button);
     button.textContent = 'add to cart';
     dataGirl.src = Toy.girlsToys[i].src;
-    dataDescr.textContent = `${Toy.girlsToys[i].name}       ${Toy.girlsToys[i].price}`;
+    let object = Toy.girlsToys[i];
+    console.log(object);
+    // console.log(object);
+    button.addEventListener('click', handleSubmitGirls);
+    function handleSubmitGirls() {
+      object.quantity++;
+      if (!selectedArray.includes(object)) {
+        console.log('found');
+        selectedArray.push(object);
+      }
+      store();
+    }
+    dataDescr2.textContent = `${Toy.girlsToys[i].name}       ${Toy.girlsToys[i].price}`;
 
   }
   // lableEl.removeEventListener('change', forSelection2);
 
 }
+getting();
