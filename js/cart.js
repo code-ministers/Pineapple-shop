@@ -1,34 +1,47 @@
 
 'use strict';
 
-
 // Create an event listener so that when the delete link is clicked, the removeItemFromCart method is invoked.
-const T1 = document.getElementById('cart'); 
-console.log(T1);
-T1.addEventListener('click', removeItemFromCart);
+const table = document.getElementById('cart');
+//table.addEventListener('click', removeItemFromCart);
+console.log(table);
+//table.addEventListener('click', removeItemFromCart);
 let cart;
+let cartItems=[];
+let totalPrice=0;
 
 
-
-let testitems=[[1,"boy",11],[2,"girl",20]];
-let stringArr = JSON.stringify(testitems);
-localStorage.setItem('cart', stringArr);
-
-console.log(testitems.length);
 function loadCart() {
-  const cartItems = JSON.parse(localStorage.getItem('cart')) || [];
-  console.log(cartItems[0]);
 
-  let cartItemsArray = new Array();
-  for (let i = 0; i < testitems.length; i++) {
-    console.log(testitems.length)
-    cartItemsArray.push(new CartItem(testitems[i][0],testitems[i][1]));
-console.log(cartItemsArray);
-  }
-  cart = new Cart(testitems);
+  cartItems = JSON.parse(localStorage.getItem('cart')) || [];
+ }
+ 
+ 
+function renderCart()
+{
+ loadCart();
+ console.log(cartItems);
+clearCart();
+showCart();
+
 }
 
 
+//TODO: Remove all of the rows (tr) in the cart table11 (tbody)
+
+
+function clearCart() {
+
+  console.log("clearCart");
+ 
+  let tbody= document.querySelector('tbody');
+  while(tbody.firstChild){
+    tbody.removeChild(tbody.firstChild);
+  }
+
+}
+
+ 
 
 function showCart() {
   // TODO: Find the table11 body
@@ -37,115 +50,117 @@ function showCart() {
   // TODO: Create a TR
   // TODO: Create a TD for the delete link, quantity,  and the item
   // TODO: Add the TR to the TBODY and each of the TD's to the TR
+
 console.log("showcart"); 
-let cartTBodyEls = document.getElementById('cart').getElementsByTagName('tbody');
+let cartTBodyEls = document.querySelector('tbody');
 console.log(cartTBodyEls);
 
-  for (let i = 0; i < 1; i++) {
-
-    let cartTBodyEl = cartTBodyEls[i];
-   
-    for (let  j = 0; j < testitems.length; j++) {
-   
-
+    for (let  j = 0; j <cartItems.length; j++) { 
+      //
       let newRowEl = document.createElement('tr');
-
+      cartTBodyEls.appendChild(newRowEl);
+     // newRowEl.setAttribute('id',j);
       let qtyN = document.createElement('td');
-      qtyN .textContent =testitems[j][0] ;
+      qtyN .textContent=j;
       newRowEl.appendChild(qtyN);
      
-      let qtyTDEl = document.createElement('td');
-      qtyTDEl.textContent =testitems[j][1] ;
-      newRowEl.appendChild(qtyTDEl);
+      let qtyNa = document.createElement('td');
+      qtyNa.textContent =cartItems[j].name;
+      newRowEl.appendChild(qtyNa);
    
-      let itemTDEl = document.createElement('td');
-      itemTDEl.textContent = testitems[j][2];
-      newRowEl.appendChild(itemTDEl);
+      let itemQ = document.createElement('td');
+      itemQ.textContent = cartItems[j].quantity;
+      newRowEl.appendChild(itemQ);
 
-      cartTBodyEl.appendChild(newRowEl);
-
+      let itemP = document.createElement('td');
+      itemP.textContent = `${cartItems[j].price} JD`;
+      newRowEl.appendChild(itemP);
+      totalPrice+=cartItems[j].price;
       
-let deleteTDEl = document.createElement('td');
-deleteTDEl.setAttribute('id',testitems[i] );
-let anchorEl = document.createElement('button');
-anchorEl.setAttribute('href', '#delete-link');
-anchorEl.setAttribute('id', testitems[i]);
-anchorEl.addEventListener('click', removeItemFromCart);
-anchorEl.textContent = 'Remove';
-deleteTDEl.appendChild(anchorEl);
-newRowEl.appendChild(deleteTDEl);
 
+      let buttunElement = document.createElement('button');
+      newRowEl.appendChild(buttunElement);
+      buttunElement.setAttribute('id',j);
+     // buttunElement.type='button';
+      buttunElement.textContent= 'Remove';
+ 
+      buttunElement.addEventListener('click', removeItemFromCart);
     }
+  //   let cartTBodyEls2 = document.querySelector('tfoot');
+  //   let newRowEl = document.createElement('tr');
+  //   cartTBodyEls2 .appendChild(newRowEl);
+  //  // newRowEl.setAttribute('id',j);
+  //   let qtyN = document.createElement('td');
+  //   qtyN .textContent=totalPrice;
+  //   newRowEl.appendChild(qtyN);
+
+  //   console.log(totalPrice);
+
+   
   }
-}
+
 
 
 
 
 // Make magic happen --- re-pull the Cart, clear out the screen and re-draw it
 
-function renderCart()
- {
-  loadCart();
-  showCart();
-  clearCart();
-}
-
-//TODO: Remove all of the rows (tr) in the cart table11 (tbody)
 
 
-  function clearCart() {
-    console.log("clearCart");
-   
-    let cartTBodyEls = document.getElementById('cart').getElementsByTagName('tbody');
-     // from stackoverflow  
-    for (let tbody of cartTBodyEls) {
-      while (tbody.firstChild) {
-        tbody.removeChild(tbody.firstChild);
-      }
-    }
 
-  }
-
-
+ 
 
 // TODO: Fill in the <tr>'s under the <tbody> for each item in the cart
 
 
-function removeItemFromCart(event) {
 
-  // TODO: When a delete link is clicked, use cart.removeItem to remove the correct item
 
-  // TODO: Save the cart back to local storage
-  // TODO: Re-draw the cart table11
-  
-    let itemToRemove = event.target.id; 
 
-    console.log(itemToRemove);
-
-   
-      console.log(testitems[i]);
-
-      if (testitems[i][0]=== itemToRemove)
-      {
-        console.log("yes");
-        cart.removeItem(testitems[i]);
-      }
-    
-    
-    cart.saveToLocalStorage();
-    renderCart();
-  
-
-}
 
 
 // This will initialize the page and draw the cart on screen
+
+
+
+function removeItemFromCart(event) {
+
+console.log(event.target.id);
+console.log(cartItems);
+
+
+if(cartItems[event.target.id].quantity>1)
+{
+  cartItems[event.target.id].quantity--;
+}
+
+else {
+ cartItems.splice(event.target.id,1);
+} 
+
+
+// totalPrice-=cartItems[event.target.id].price ; 
+// console.log(cartItems[event.target.id].price );
+// console.log(totalPrice);
+ let stringArr = JSON.stringify(cartItems);
+ localStorage.setItem('cart', stringArr);
+
+
+
+ renderCart();
+}
+
+
 renderCart();
 
 
+function myFunction() { 
 
-
-
-
-
+  document.getElementById("contact").reset(); 
+  alert ("Thank you for choosing  our store for toys kids products ^_^ "); 
+  clearCart();
+  cartItems=[];
+  let stringArr = JSON.stringify(cartItems);
+  localStorage.setItem('cart', stringArr);
+   
+ 
+}

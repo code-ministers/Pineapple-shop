@@ -55,13 +55,17 @@
         <br>
         <table style="width:50%" id="cart">
 
+            <thead>
             <tr>
                 <th>Number</th>
                 <th>Product</th>
                 <th>Quantity</th>
+                <th>Price</th>
                 <th>Remove</th>
 
             </tr>
+            </thead>
+
             <!-- generate this from js for each added item: -->
             <!-- <tr>
               <td></td>
@@ -70,7 +74,9 @@
               <td</td>
             </tr> -->
           
-            <tbody id="cart2"></tbody>
+            <tbody></tbody>
+
+            <tfoot></tfoot>
                
             </table>
         
@@ -113,9 +119,11 @@
             </fieldset>
         </form>
 
-        <button id='confirmAlert' onclick="alert('Thank You for your buy <3')">Confirm Buy</button>
 
-
+        <button id='confirmAlert' onclick="alert('Thank You for your buy <3')"   >Confirm Buy</button>
+ 
+        <input type="button" onclick="myFunction()" value="Reset form">
+        
         <br>
 
 
