@@ -115,6 +115,7 @@ Toy.prototype.renderFunction = function () {
   imageEl.appendChild(button);
   button.textContent = 'add to cart';
   data.src = this.src;
+  data.className='allProducts';
   let object = this;
   // console.log(object);
   button.addEventListener('click', handleSubmit);
