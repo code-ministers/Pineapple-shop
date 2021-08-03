@@ -30,9 +30,11 @@ Toy.prototype.girlToy = function (gender) {
   }
 };
 
+
 // const Cart = function (items) {
 //   this.items = items;
 // };
+
 
 // const CartItem = function (toy) {
 //   this.toy = toy;
@@ -149,32 +151,30 @@ for (let i = 0; i < Toy.all.length; i++) {
   Toy.all[i].renderFunction();
 }
 
-function render()
-{
+function render() {
   let lableEl = document.getElementById('mySelect');
   let value = lableEl.options[lableEl.selectedIndex].value;
-  console.log(value)
+  console.log(value);
   if (value == 'Boys') {
     //lableEl.addEventListener('change', forSelection);
-    forSelection()
-    console.log("boys event")
+    forSelection();
+    console.log('boys event');
   }
-  else
-    if (value == 'Girls') {
-      //lableEl.addEventListener('change', forSelection2);
-      forSelection2()
-      console.log('girls event')
+  else if (value == 'Girls') {
+    //lableEl.addEventListener('change', forSelection2);
+    forSelection2();
+    console.log('girls event');
+  }
+  else {
+    imageEl.innerHTML = ' ';
+    for (let i = 0; i < Toy.all.length; i++) {
+      Toy.all[i].renderFunction();
     }
-else
-{
-  imageEl.innerHTML=' '
-for (let i = 0; i < Toy.all.length; i++) {
-  Toy.all[i].renderFunction();
-}}
+  }
 }
 
 
-function forSelection(event) {
+function forSelection() {
   //event.preventDefault();
   imageEl.innerHTML = ' ';
   //console.log(Toy.boysToys);
@@ -199,6 +199,20 @@ function forSelection(event) {
 
     button.textContent = 'add to cart';
     dataBoy.src = Toy.boysToys[i].src;
+<<<<<<< HEAD
+    let object = Toy.boysToys[i];
+    // console.log(object);
+    button.addEventListener('click', handleSubmitBoys);
+    function handleSubmitBoys() {
+      object.quantity++;
+      if (!selectedArray.includes(object)) {
+        console.log('found');
+        selectedArray.push(object);
+      }
+      store();
+    }
+    dataDescr.textContent = `${Toy.boysToys[i].name}    ${Toy.boysToys[i].price}`;
+=======
     dataBoy.className='boyProducts';
 
   //   dataDescr3.textContent = `${this.name}`;
@@ -209,20 +223,21 @@ function forSelection(event) {
 
 
     // dataDescr.textContent = `${Toy.boysToys[i].name}    ${Toy.boysToys[i].price}`;
+>>>>>>> f72f08e4c57140ceafbeeb625bba312182afda9d
     console.log(Toy.boysToys);
   }
 
 }
-getting();
+
 
 
 //lableEl = document.getElementById('mySelect');
 
 //lableEl.addEventListener('change', forSelection2);
 
-function forSelection2(event) {
- // event.preventDefault();
-  imageEl.innerHTML = " ";
+function forSelection2() {
+  // event.preventDefault();
+  imageEl.innerHTML = ' ';
   //console.log (Toy.boysToys);
   for (let i = 0; i < Toy.girlsToys.length; i++) {
 
@@ -244,6 +259,21 @@ function forSelection2(event) {
 
     button.textContent = 'add to cart';
     dataGirl.src = Toy.girlsToys[i].src;
+<<<<<<< HEAD
+    let object = Toy.girlsToys[i];
+    console.log(object);
+    // console.log(object);
+    button.addEventListener('click', handleSubmitGirls);
+    function handleSubmitGirls() {
+      object.quantity++;
+      if (!selectedArray.includes(object)) {
+        console.log('found');
+        selectedArray.push(object);
+      }
+      store();
+    }
+    dataDescr2.textContent = `${Toy.girlsToys[i].name}       ${Toy.girlsToys[i].price}`;
+=======
     dataGirl.className='girlProducts';
 
 
@@ -254,12 +284,17 @@ function forSelection2(event) {
  dataDescr6.textContent = `Price :  ${Toy.girlsToys[i].price}  JD `;
 
     // dataDescr2.textContent = `${Toy.girlsToys[i].name}       ${Toy.girlsToys[i].price}`;
+>>>>>>> f72f08e4c57140ceafbeeb625bba312182afda9d
 
   }
   // lableEl.removeEventListener('change', forSelection2);
 
 }
+<<<<<<< HEAD
+getting();
+=======
 
 
 
 
+>>>>>>> f72f08e4c57140ceafbeeb625bba312182afda9d
