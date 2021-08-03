@@ -44,19 +44,23 @@ function renderImagesOnSale(){
   for(let i =0 ; i<3 ; i++){
     let index = getRandomIndex();
     let priceOnSale = onSale[index].price/2;
+    let div = document.createElement('div');
+    onSaleContainer.appendChild(div);
     let img = document.createElement('img');
-    onSaleContainer.appendChild(img);
+    div.appendChild(img);
     img.src= onSale[index].src;
     let button = document.createElement('button');
+    let name = document.createElement('p');
     let dataDescr = document.createElement('p');
     let oldPrice = document.createElement('del');
     let text = document.createElement('p');
     let newPrice = document.createElement('ins');
-    onSaleContainer.appendChild(dataDescr);
-    onSaleContainer.appendChild(oldPrice);
-    onSaleContainer.appendChild(text);
-    onSaleContainer.appendChild(newPrice);
-    onSaleContainer.appendChild(button);
+    div.appendChild(name);
+    div.appendChild(dataDescr);
+    dataDescr.appendChild(oldPrice);
+    div.appendChild(text);
+    text.appendChild(newPrice);
+    div.appendChild(button);
     button.textContent = 'add to cart';
     let object = onSale[index];
     // console.log(object);
@@ -69,10 +73,11 @@ function renderImagesOnSale(){
       }
     store();
     }
-    dataDescr.textContent = `${Toy.boysToys[i].name}  old price :`;
-    oldPrice.textContent = ` ${Toy.boysToys[i].price} `;
-    text.textContent= 'new price : ';
-    newPrice.textContent= `${priceOnSale} !`;
+    name.textContent = object.name;
+    oldPrice.textContent = `${object.price} JD`;
+    dataDescr.textContent = `old price : ${oldPrice.textContent}`;
+    newPrice.textContent= `${priceOnSale} JD!`;
+    text.textContent= `new price : ${newPrice.textContent}`;
   }
 }
 

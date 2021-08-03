@@ -106,7 +106,7 @@ function getting() {
   }
 }
 Toy.prototype.renderFunction = function () {
-let child=document.createElement('div');
+  let child=document.createElement('div');
   let data = document.createElement('img');
   let dataDescr1 = document.createElement('p');
   let dataDescr2 = document.createElement('p');
@@ -208,14 +208,14 @@ function forSelection() {
       }
       store();
     }
- 
+
     dataBoy.className='boyProducts';
 
-  //   dataDescr3.textContent = `${this.name}`;
-  // dataDescr4.textContent = `Price : ${this.price}  JD `;
+    //   dataDescr3.textContent = `${this.name}`;
+    // dataDescr4.textContent = `Price : ${this.price}  JD `;
 
-  dataDescr3.textContent = `${Toy.boysToys[i].name}`;
-  dataDescr4.textContent =  `Price :  ${Toy.boysToys[i].price}  JD `;
+    dataDescr3.textContent = `${Toy.boysToys[i].name}`;
+    dataDescr4.textContent = `Price :  ${Toy.boysToys[i].price}  JD `;
 
 
     // dataDescr.textContent = `${Toy.boysToys[i].name}    ${Toy.boysToys[i].price}`;
@@ -274,9 +274,8 @@ function forSelection2() {
     // dataDescr5.textContent = `${this.name}`;
     // dataDescr6.textContent = `Price : ${this.price}  JD `;
 
- dataDescr5.textContent = `${Toy.girlsToys[i].name}`;       
- dataDescr6.textContent = `Price :  ${Toy.girlsToys[i].price}  JD `;
-
+    dataDescr5.textContent = `${Toy.girlsToys[i].name}`;
+    dataDescr6.textContent = `Price :  ${Toy.girlsToys[i].price}  JD `;
     // dataDescr2.textContent = `${Toy.girlsToys[i].name}       ${Toy.girlsToys[i].price}`;
 
 
