@@ -5,8 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/reset.css">
-    <link rel="stylesheet" href="css/stylesheet.css">
-    <link rel="stylesheet" href="css/stylehf.css">
+    <link rel="stylesheet" href="css/home.css">
     <title>Home</title>
 </head>
 <body>
@@ -33,29 +32,69 @@
                 </li>
             </ul>
         </nav>
-        <h1>pineapple</h1>
+        <h1>Pineapple</h1>
     </header>
     <main>
+        <div class="slideshow-container">
+
+            <div class="mySlides fade">
+              <div class="numbertext">1 / 4</div>
+              <img src="img/slide-show/89-894836_play-school-images-png-clipart.png" style="width:75%">
+            </div>
+            
+            <div class="mySlides fade">
+              <div class="numbertext">2 / 4</div>
+              <img src="img/slide-show/mother-and-child-sitting.png" style="width:75%">
+            </div>
+            
+            <div class="mySlides fade">
+              <div class="numbertext">3 / 4</div>
+              <img src="img/slide-show/nursery-school-500x500.png" style="width:75%">
+            </div>
+
+            <div class="mySlides fade">
+                <div class="numbertext">4 / 4</div>
+                <img src="img/slide-show/play-school-kids-png-images.png" style="width:75%">
+            </div>
+
+            <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+            <a class="next" onclick="plusSlides(1)">&#10095;</a>
+            
+            </div>
+            <br>
+            
+            <div style="text-align:center">
+              <span class="dot" onclick="currentSlide(1)"></span> 
+              <span class="dot" onclick="currentSlide(2)"></span> 
+              <span class="dot" onclick="currentSlide(3)"></span>
+              <span class="dot" onclick="currentSlide(4)"></span> 
+            </div>
+            
+            
         <div>
-            <img src="" alt="" id="slide-show">
+            <h2>Welcome to Pineapple</h2>
+            <p>All the toys you need for your kids of all ages, Kids Can Enjoy Hours of Imaginative Play With Exciting Toys <br> Pineapple is a wonderland of fun for children of all ages. Our vast selection includes a lot of great values thanks to our everyday low prices too, so you can stock up on toys for any occasion. Whether you're trying to load goodies the EID or you're looking for something small as a reward for a major academic accomplishment, you'll have plenty of options to choose from as you shop.</p>
+            <br>
+            <button onclick="location.href='products.html'">Shop Now</button>
         </div>
         <div>
-            <p></p>
+            <!-- <iframe width="560" height="315" src="https://www.youtube.com/embed/V3afvshc3hA" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe> -->
+            <video src="img/video/mrBean.mp4" width="75%" height="200px" autoplay controls allowfullscreen></video>
         </div>
         <div>
-            <video src=""></video>
+            <p>
+                50% off on selected item for limted time
+            </p>
         </div>
-        <div id="top-seller">
-            <img src="" alt="">
-            <img src="" alt="">
-            <img src="" alt="">
+        <div id="onSale">
+            
         </div>
     </main>
     <footer>
         <nav id="contact-nav">
             <ul>
                 <li>
-                    Contact us
+                    Contact us :
                 </li>
                 <li>
                     <a href="mailto: support@pineappleShop.com">support@pineappleShop.com</a>
@@ -66,19 +105,21 @@
             </ul>
         </nav>
         <nav id="social-media">
-            <a href="">
-                <img src="" alt="">
+            <p>Find us on social-media :</p>
+            <a href="https://www.facebook.com">
+                <img src="img/icons/fb-icon.png" alt="">
             </a>
-            <a href="">
-                <img src="" alt="">
+            <a href="https://www.instagram.com">
+                <img src="img/icons/insta-icon.png" alt="">
             </a>
-            <a href="">
-                <img src="" alt="">
+            <a href="https://twitter.com">
+                <img src="img/icons/twit-icon.png" alt="">
             </a>
         </nav>
     </footer>
     <script src='js/shop.js'></script>
     <script src='js/cart.js'></script>
     <script src='js/product.js'></script>
+    <script src="js/home.js"></script>
 </body>
 </html>
