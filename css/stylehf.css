@@ -1,4 +1,4 @@
-.container{
+/* .container{
   
  
   
@@ -45,4 +45,69 @@
   li a.active {
     color: white;
     background-color: #04AA6D;
+  } */
+  header{
+    width: 100vw;
+    background-color: darkgrey;
   }
+  #logo img{
+    width: 200px;
+    height: 100px;
+    border-radius: 10px;
+  }
+  header nav ul{
+    position: absolute;
+    right: 25px;
+    top: 40px;
+    width: 50vw;
+    display: inline-grid;
+    grid-template-columns: repeat(5,1fr);
+    grid-gap: 5px;
+
+  }
+  header nav ul li a{
+    text-decoration: none;
+    padding: 5px;
+    color: whitesmoke;
+  }
+
+  header nav ul li a:hover{
+    background-color:gray;
+  }
+header h1 {
+  position: absolute;
+  top: 60px;
+  left: 210px;
+  font-size: 30px;
+  color: whitesmoke;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+footer{
+  margin-top: 30px;
+  width: 100vw;
+  background-color: darkgrey;
+}
+footer nav ul{
+  margin-left: 15px;
+  padding: 10px;
+  display: inline-grid;
+  grid-template-rows: repeat(2,1fr);
+  grid-gap: 10px;
+}
+footer nav ul a{
+  text-decoration: none;
+  color:whitesmoke;
+}
+#social-media {
+  position: absolute;
+  
+  right: 25px;
+  
+}
+#social-media a{
+  padding: 5px;
+  text-decoration: none;
+}
+#social-media div{
+  margin-top: 10px;
+}
