@@ -210,7 +210,22 @@ function forSelection() {
       }
       store();
     }
+<<<<<<< HEAD
     dataDescr.textContent = `${Toy.boysToys[i].name}    ${Toy.boysToys[i].price}`;
+=======
+ 
+    dataBoy.className='boyProducts';
+
+  //   dataDescr3.textContent = `${this.name}`;
+  // dataDescr4.textContent = `Price : ${this.price}  JD `;
+
+  dataDescr3.textContent = `${Toy.boysToys[i].name}`;
+  dataDescr4.textContent =  `Price :  ${Toy.boysToys[i].price}  JD `;
+
+
+    // dataDescr.textContent = `${Toy.boysToys[i].name}    ${Toy.boysToys[i].price}`;
+
+>>>>>>> 6c9c559b43557df94bd33aa0e3e94dea2562b891
     console.log(Toy.boysToys);
   }
 
@@ -246,6 +261,10 @@ function forSelection2() {
 
     button.textContent = 'add to cart';
     dataGirl.src = Toy.girlsToys[i].src;
+<<<<<<< HEAD
+=======
+
+>>>>>>> 6c9c559b43557df94bd33aa0e3e94dea2562b891
     let object = Toy.girlsToys[i];
     console.log(object);
     // console.log(object);
@@ -258,10 +277,36 @@ function forSelection2() {
       }
       store();
     }
+<<<<<<< HEAD
     dataDescr2.textContent = `${Toy.girlsToys[i].name}       ${Toy.girlsToys[i].price}`;
+=======
+
+    dataGirl.className='girlProducts';
+
+
+    // dataDescr5.textContent = `${this.name}`;
+    // dataDescr6.textContent = `Price : ${this.price}  JD `;
+
+ dataDescr5.textContent = `${Toy.girlsToys[i].name}`;       
+ dataDescr6.textContent = `Price :  ${Toy.girlsToys[i].price}  JD `;
+
+    // dataDescr2.textContent = `${Toy.girlsToys[i].name}       ${Toy.girlsToys[i].price}`;
+
+>>>>>>> 6c9c559b43557df94bd33aa0e3e94dea2562b891
 
   }
   // lableEl.removeEventListener('change', forSelection2);
 
 }
+<<<<<<< HEAD
 getting();
+=======
+
+getting();
+
+
+
+
+
+
+>>>>>>> 6c9c559b43557df94bd33aa0e3e94dea2562b891
