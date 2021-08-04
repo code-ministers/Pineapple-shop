@@ -1,7 +1,4 @@
 'use strict';
-
-
-
 const Toy = function (name, src, price, gender) {
   this.name = name;
   this.src = src;
@@ -107,6 +104,8 @@ function getting() {
 }
 Toy.prototype.renderFunction = function () {
   let child=document.createElement('div');
+  child.setAttribute('class','maindiv')
+
   let data = document.createElement('img');
   let dataDescr1 = document.createElement('p');
   let dataDescr2 = document.createElement('p');
@@ -182,6 +181,8 @@ function forSelection() {
   for (let i = 0; i < Toy.boysToys.length; i++) {
 
     let boyDiv = document.createElement('div');
+    boyDiv.setAttribute('class','maindiv')
+
     let dataBoy = document.createElement('img');
     let dataDescr3 = document.createElement('p');
     dataDescr3.setAttribute('class','B')
@@ -238,6 +239,8 @@ function forSelection2() {
   for (let i = 0; i < Toy.girlsToys.length; i++) {
 
     let girlDiv = document.createElement('div');
+    girlDiv.setAttribute('class','maindiv')
+
     let dataGirl = document.createElement('img');
     let dataDescr5 = document.createElement('p');
     dataDescr5.setAttribute('class','G')
