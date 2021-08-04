@@ -3,22 +3,26 @@
 * {
   box-sizing: border-box;
 }
-
+body{
+  background-color: #EDF6E5;
+}
 h1{
 
     text-align: center;
     font-size: 50px;
+    color: #cc445f;
 }
 
 h2 {
     text-align: center;
     font-size:larger;
-
+    color: #cc445f;
 }
 
 h3 {
     text-align: center;
     font-size: 25px;
+    color: #cc445f;
 
 }
 input[type=text], select, textarea {
@@ -30,23 +34,24 @@ input[type=text], select, textarea {
 }
 
 label {
+  color: #cc445f;
   padding: 12px 12px 12px 0;
   display: inline-block;
 }
 
 button {
-    background-color: #04AA6D;
-  color: white;
+    background-color: #B5EAEA;
+  color: #cc445f;
   padding: 12px 20px;
   border:black;
   border-radius: 4px;
   cursor: pointer;
-  /* float: left; */
   text-align: center;
 }
 
 button:hover {
-    background-color: #04AA6D;
+    background-color: #26bbbb;
+  
 }
 
 #confirmB {
@@ -63,6 +68,7 @@ button:hover {
   width: 75%;
   padding: 20px;
   margin-left:13%;
+  background-color: #B5EAEA;
 }
 
 .col-25 {
@@ -106,7 +112,7 @@ button:hover {
   
   
   #cart td, #cart th {
-    border: 1px solid #ddd;
+    border: 1px solid #FFBCBC;
     padding: 8px;
   }
   
@@ -118,6 +124,13 @@ button:hover {
     padding-top: 12px;
     padding-bottom: 12px;
     text-align: center;
-    background-color: #04AA6D;
-    color: white;
+    background-color: #B5EAEA;
+    color: #cc445f  ;
+  }
+
+  td{
+    color: #cc445f;
+  }
+  #country{
+    height: 41px;
   }

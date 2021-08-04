@@ -1,9 +1,30 @@
+body{
+    background-color: #EDF6E5;
+}
 .allProducts{
     width: 450px;
     height: 350px;
     display: flex;
-    flex-wrap: wrap
+    flex-wrap: wrap;
 
+}
+#mySelect{
+background-color: #cc445f;
+color: white;
+border:black;
+border-radius: 20px;
+cursor: pointer;
+text-align: center;
+width: 100px;
+height: 30px;
+margin-bottom: 15px;
+}
+
+.maindiv{
+    background-color: #B5EAEA;
+    margin-left: 20px;
+    border-radius: 30px;
+    margin-bottom: 30px;
 }
 
 .boyProducts{
@@ -45,35 +66,33 @@ padding-bottom: 20px;
     text-align: center;
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
     font-size: x-large;
-    color: green;
-    padding-top: 20px;
+    color: #cc445f;
+    padding-top: 10px;
     padding-bottom: 20px;
 
     }
 
 .maindiv button{
-margin-left: 200px;
-
-background-color: #04AA6D;
+margin-left: 170px;
+background-color: #cc445f;
 color: white;
 padding: 12px 20px;
 border:black;
-border-radius: 4px;
+border-radius: 20px;
 cursor: pointer;
-/* float: left; */
 text-align: center;
-}
-.maindiv button:hover {
-    background-color: #caf50b;
+width: 150px;
+font-size: 16px;
+margin-bottom: 20px;
 }
 
-main h1{
+main div h1{
+margin-top: 60px;
 text-align: center;
 font-family: 'Indie Flower', cursive;
 text-shadow: 4px 4px 4px #aaa;
-color: blueviolet;
+color: #cc445f;
 font-size: xx-large;
-margin-top: 30px;
 }
 
 p .B{
@@ -86,7 +105,7 @@ p .G{
 }
 
 main div label{
-
+color: #cc445f;
 margin-left: 100px;
 margin-right: 20px;
 font-size: x-large;
