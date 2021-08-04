@@ -1,0 +1,189 @@
+* {box-sizing: border-box}
+
+.mySlides {display: none}
+img {vertical-align: middle;}
+
+/* Slideshow container */
+.slideshow-container {
+  max-width: 1000px;
+  position: relative;
+  margin: auto;
+}
+
+/* Next & previous buttons */
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  padding: 16px;
+  margin-top: -22px;
+  color: #cc445f;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  /* margin-right: 25%; */
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+  background-color: #B5EAEA;
+}
+
+
+/* Number text (1/4 etc) */
+.numbertext {
+  color: #f1eeee;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active, .dot:hover {
+  background-color: #B5EAEA;
+}
+
+/* Fading animation */
+.fade {
+  margin-left: 15%;
+  margin-top: 30px;
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+/* On smaller screens, decrease text size */
+@media only screen and (max-width: 300px) {
+  .prev, .next,.text {font-size: 11px}
+}
+
+video{
+  width: 50%;
+  height: 350px;
+  margin-top: 60px;
+  margin-bottom: 60px;
+  margin-left: 25%;
+  margin-right: 25%;
+}
+body{
+  width: 100vw;
+  background-color: #EDF6E5;
+}
+
+#text h2 {
+  font-size: xx-large;
+  font-weight: bold;
+  text-align: center;
+  padding: 40px;
+  color: #cc445f;
+}
+#text p{
+  text-align: center;
+  letter-spacing: 2px;
+  line-height: 1.8;
+  color: #cc445f;
+  margin-right: 120px;
+  margin-left: 120px;
+  margin-bottom: 30px;
+  
+}
+#text{
+  width: 99vw;
+  border-radius: 30px;
+  background-color: #B5EAEA;
+  margin-bottom: 50px;
+}
+#text button{
+  margin-left: 42%;
+  margin-bottom: 40px;
+  width: 200px;
+  height: 50px;
+  border: none;
+  color: white;
+  text-align: center;
+  cursor: pointer;
+  border-radius: 40px;
+  background-color: #cc445f;
+}
+#text button:hover{
+  opacity: 0.7;
+}
+#saleText{
+  margin-top: 60px;
+  margin-bottom: 50px;
+  text-align: center;
+  font-weight: bolder;
+  font-size: x-large;
+  color: #cc445f;
+}
+#onSale{
+  width: 95vw;
+  margin-left: 100px;
+  margin-right: 100px;
+  display: inline-grid;
+  grid-template-columns: repeat(3,1fr);
+  grid-gap: 10px;
+}
+#onSale img{
+  width: 50%;
+  height: 100px;
+}
+#onSale div{
+  padding: 20px;
+  width: 70%;
+  background-color: #B5EAEA;
+  border-radius: 30px;
+  text-align: center;
+}
+#onSale div button{
+  margin-top: 20px;
+  margin-bottom: 10px;
+  border-radius: 40px;
+  width: 120px;
+  height: 30px;
+  border: none;
+  color: white;
+  text-align: center;
+  cursor: pointer;
+  background-color: #cc445f;
+  font-weight: bold;
+}
+#onSale div button:hover{
+  opacity: 0.7;
+}
+#onSale div p{
+  padding: 7px;
+  color: #cc445f;
+}

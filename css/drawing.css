@@ -1,0 +1,24 @@
+#para{
+    color: #cc445f;
+    margin-top: 70px;
+    margin-left: 350px;
+    width: 50%;
+    padding: 10px;
+    font-size: 16pt;
+    color: F38BA0;
+    text-align:center;
+    font-family:cursive;
+}
+
+#drawings{
+    position: absolute;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    margin-left: 20px;
+    border: 2px solid;
+    
+}
+
+body{
+    background-color: #EDF6E5;
+}

@@ -1,0 +1,138 @@
+h2 {
+    text-align: center;
+    /* font-family: fantasy; */
+    margin-bottom: 20px;
+    font-size: 7pc;
+    color: #cc445f;
+    
+
+}
+#pa{
+    margin-top: 10px;
+    margin-left: 250px;
+    width: 50%;
+    padding: 10px;
+    font-size: 16pt;
+    color: #cc445f;
+    text-align:justify center;
+    font-family:cursive;
+    line-height: 1.6;
+
+}
+body{
+    background-color:EDF6E5;
+}
+@keyframes example {
+    0%   {left:0px; top:0px;}
+    25%  {left:800px; top:0px;}
+    50%  {left:800px; top:200px;}
+    75%  {left:0px; top:200px;}
+    100% {left:0px; top:0px;}
+  }
+
+#vision{
+    background-color: B5EAEA;
+    margin-top: 100px;
+    margin-left: 25px;
+    width: 50%;
+    padding: 20px;
+    border-radius: 60%;
+    /* font-family:fantasy; */
+    position: relative;
+    animation-name: example;
+    animation-duration: 10s;
+  animation-timing-function: linear;
+  animation-delay: 3s;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+}
+
+
+@keyframes example1 {
+    0%   {right:0px; top:0px;}
+    25%  {right: 800px; top:0px;}
+    50%  {right:800px; top:200px;}
+    75%  {right:0px; top:200px;}
+    100% {right:0px; top:0px;}
+  }
+#mission{
+    background-color: B5EAEA;
+    border-radius: 60%;
+    margin-top: 70px;
+    margin-left: 880px;
+    margin-bottom: 100px;
+    width: 50%;
+    padding: 20px;
+    /* font-family:fantasy; */
+    position: relative;
+    animation-name: example1;
+    animation-duration: 10s;
+  animation-timing-function: linear;
+  animation-delay: 3s;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+}
+#aboutUsEl{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 90px;
+    margin-left: 80px;
+
+}
+  
+#ahmad img{
+    border-radius: 50%;
+    width: 250px;
+    height: 300px;
+}
+#ahmad h4{
+    color: 64C9CF;
+}
+
+#amani img{
+    border-radius: 50%;
+    width: 250px;
+    height: 300px;
+    
+}
+#amani h4 {
+    color: FFBCBC;
+}
+
+#hala img{
+    border-radius: 50%;
+    width: 250px;
+    height: 300px;
+    
+}
+#hala h4{
+    color: FFBCBC;
+}
+
+#alaa img{
+    border-radius: 50%;
+    width: 250px;
+    height: 300px;
+}
+#alaa h4{
+    color: 64C9CF;
+}
+
+#mohammad img{
+    border-radius: 50%;
+    width: 250px;
+    height: 300px;
+}
+#mohammad h4{
+    color: 64C9CF;
+}
+
+h4{
+    text-align: justify;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    margin-top: 20px;
+    font-size: 1.05pc;
+    font-weight: bold;
+    margin-bottom: 50px;
+   
+}

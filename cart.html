@@ -7,56 +7,72 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/reset.css">
     <link rel="stylesheet" href="css/stylesheet.css">
-
+    <link rel="stylesheet" href="css/cartstyle.css">
     <link rel="style" href="css/style.css">
+    <link rel="stylesheet" href="css/stylehf.css">
+
 
     <title>Home</title>
+
 
 
 </head>
 
 <body>
+
     <header>
-        <div id="logo">
-            <img src="" alt="">
+        <div>
+            <img src="img/logo/toy-store-logo-cute-kids-shop-symbol-vector-18038079 (2).png" alt="" id="logo">
         </div>
-        <nav id="links-nav">
-            <ul>
+        <nav >
+            <ul id="links-ul">
                 <li>
-                    <a href="index.html">Home</a>
+                    <a href="index.html" class="header-links">Home</a>
                 </li>
                 <li>
-                    <a href="products.html">Products</a>
+                    <a href="products.html" class="header-links">Products</a>
                 </li>
                 <li>
-                    <a href="cart.html">Cart</a>
+                    <a href="cart.html" class="header-links">Cart</a>
                 </li>
                 <li>
-                    <a href="draw.html">Game</a>
+                    <a href="draw.html" class="header-links">Game</a>
                 </li>
                 <li>
-                    <a href="about.html">About us</a>
+                    <a href="about.html" class="header-links">About us</a>
                 </li>
             </ul>
         </nav>
-        <h1>Welcome To Your Cart </h1>
-        <h2>Here Is A List Of All The Products You Buy ! </h2>
-
     </header>
+    
     <main>
 
-        </div>
 
+    <br>
+    <br>
+        <h1>Welcome To Your Cart </h1>
         <br>
-        <table style="width:50%" id="cartTable">
+        <h2>Here Is A List Of All The Products You Buy ! </h2>
+        <br>
 
-            <tr>
-                <th>Number</th>
-                <th>Product</th>
-                <th>Quantity</th>
-                <th>Remove</th>
+    
+ 
+<div id="table" style="text-align:center;">
+    
+        <table  id="cart" >
+       
 
-            </tr>
+            <thead>
+                <tr>
+                    <th>Number</th>
+                    <th>Product</th>
+                    <th>Quantity</th>
+                    <th>Price</th>
+                    <th>Remove</th>
+
+                </tr>
+            </thead>
+
             <!-- generate this from js for each added item: -->
             <!-- <tr>
               <td></td>
@@ -65,63 +81,81 @@
               <td</td>
             </tr> -->
 
+            <tbody></tbody>
+
+            <tfoot></tfoot>
+
         </table>
 
-        <br>
 
-        <form id="contact">
-            <fieldset>
-
-                <label for="adding name">Please Add Your Full Name </label>
-                <br>
-                <br>
-
-                First : <input type="text" name="firt" id="first">
-                Second : <input type="text" name="second" id="second">
-                Family : <input type="text" name="family" id="family">
-                <br>
-                <br>
-
-                <label for="adding max">Please Add Your Phone Number:</label>
-                <br>
-                <br>
-                Local Key : <input type="number" name="localKey" id="localKey">
-                Your Number :<input type="number" name="phone" id="phone">
-
-
-                <br>
-                <br>
-                <label for="email">Please Add Your E-Mail :</label>
-                <input type="email" name="email" id="email">
-                <br>
-                <br>
-                <label for="text">Please Add Your Adress :</label>
-                <input type="text" name="Adress" id="Adress">
-
-                <br>
-                <br>
-
-
-            </fieldset>
-        </form>
-
-        <button id='confirmAlert' onclick="alert('Thank You for your buy <3')">Confirm Buy</button>
-
-
-        <br>
-
-
-        <div id="cartContant">
-            <!-- generate  from js for each item contant: -->
+            <br>
 
         </div>
+        <div class="container">
+            <form id="contact">
+            <div class="row">
+              <div class="col-25">
+                <label for="fname">First Name</label>
+              </div>
+              <div class="col-75">
+                <input type="text" id="fname" name="firstname" placeholder="Your name..">
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-25">
+                <label for="lname">Last Name</label>
+              </div>
+              <div class="col-75">
+                <input type="text" id="lname" name="lastname" placeholder="Your last name..">
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-25">
+                <label for="country">Country</label>
+              </div>
+              <div class="col-75">
+                <select id="country" name="country">
+                  <option value="Jordan">Jordan</option>
+                  <option value="palestine">palestine</option>
+                  <option value="iraq">Iraq</option>
+                  <option value="iraq">UAE</option>
+                  <option value="iraq">KSA</option>
+                  <option value="iraq">Qatar</option>
+                </select>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-25">
+                <label for="subject">Adress Detalis</label>
+              </div>
+              <div class="col-75">
+                <textarea id="subject" name="subject" placeholder="Write something.." style="height:200px"></textarea>
+              </div>
+            </div>
+         
+            </form>
+          </div>
 
+      
+    
+       
+          <br>
+
+      
+
+        <button id='confirmB'  onclick="myFunction()">Confirm Buy</button>
+
+        <br>
         <br>
 
         <h2>Remember the world child and give a wonderful gift for a lucky child !<h2>
 
+            <br>
+
                 <button id='DonateAlert' onclick="alert('Thank You for your generous donate <3')">Donate 1 $ </button>
-                <h2> Draw Smile !</h2>
+<br>
+<br>
+                <h3> Draw Smile ^^ </h3>
 
 
 
@@ -131,37 +165,41 @@
     </main>
 
     <footer>
-        <nav id="contact-nav">
-            <ul>
+
+        <nav >
+            <ul id="contact-ul">
                 <li>
-                    Contact us
+                    Contact us :
                 </li>
                 <li>
-                    <a href="mailto:support@pineappleShop.com">support@pineappleShop.com</a>
+                    <a href="mailto: support@pineappleShop.com" class="contact">support@pineappleShop.com</a>
                 </li>
                 <li>
-                    <a href="tel:000000">Call us at 0000000</a>
+                    <a href="tel:000000" class="contact">Call us at 0000000</a>
                 </li>
             </ul>
         </nav>
-
-
         <nav id="social-media">
-            <a href="">
-                <img src="" alt="">
-            </a>
-            <a href="">
-                <img src="" alt="">
-            </a>
-            <a href="">
-                <img src="" alt="">
-            </a>
+
+            <p id="find-us">Find us on :</p>
+            <div id="social-div">
+                <a href="https://www.facebook.com" class="social-links">
+                    <img src="img/icons/fb-icon.png" alt="">
+                </a>
+                <a href="https://www.instagram.com" class="social-links">
+                    <img src="img/icons/insta-icon.png" alt="">
+                </a>
+                <a href="https://twitter.com" class="social-links">
+                    <img src="img/icons/twit-icon.png" alt="">
+                </a>
+            </div>
         </nav>
-        <p> Copy Right By code-ministers &copy; </p>
-        <script src="js/cart.js">
-        </script>
     </footer>
+    <script src='js/shop.js'></script>
     <script src='js/cart.js'></script>
+    <script src='js/product.js'></script>
+
+
 </body>
 
 </html>

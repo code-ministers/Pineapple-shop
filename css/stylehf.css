@@ -1,0 +1,89 @@
+body {font-family: Verdana, sans-serif; margin:0}
+  header{
+    width: 100vw;
+    background-color: #B5EAEA;
+    border-radius: 40px;
+  }
+  #logo {
+    margin-left: 20px;
+    width: 150px;
+    height: 100px;
+    border-radius: 10px;
+  }
+  #links-ul{
+    margin-left: 50px;
+    margin-right: 50px;
+    position: absolute;
+    right: 25px;
+    top: 45px;
+    width: 45vw;
+    display: inline-grid;
+    grid-template-columns: repeat(5,1fr);
+    grid-gap: 1px;
+    list-style: none;
+
+  }
+  
+  .header-links{
+    text-decoration: none;
+    padding: 5px;
+    color: #cc445f;
+    font-size: 20px;
+
+  }
+.header-links:hover{
+    background-color:#eb7474;
+    border-radius: 20px;
+  }
+#shop-name {
+  position: absolute;
+  top: 42px;
+  left: 210px;
+  font-size: 30px;
+  color: whitesmoke;
+  font-weight: bold;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+footer{
+  margin-top: 70px;
+  height: 110px;
+  width: 100vw;
+  background-color: #B5EAEA;
+  border-radius: 40px;
+}
+#contact-ul{
+  margin-left: 80px;
+  margin-top: 10px;
+  padding: 10px;
+  display: inline-grid;
+  grid-template-rows: repeat(2,1fr);
+  grid-gap: 10px;
+  list-style: none;
+  color: #cc445f;
+  line-height: 20px;
+}
+#contact-ul li a{
+  color: #cc445f;
+}
+.contact{
+  text-decoration: none;
+  color:whitesmoke;
+}
+#social-media {
+  position: absolute;
+  margin-top: -80px;
+  right: 80px;
+  
+}
+.social-links{
+  padding: 5px;
+  text-decoration: none;
+}
+#social-div{
+  margin-top: 10px;
+}
+#find-us{
+  color: #cc445f;
+  text-align: right;
+  font-size: 22px;
+}
