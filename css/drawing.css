@@ -9,9 +9,11 @@ p{
     font-family:cursive;
 }
 #drawings{
-    margin-top: 50px;
+    position: absolute;
+    margin-top: 20px;
     margin-bottom: 20px;
-    margin-left: 700px;
+    margin-left: 20px;
+    border: 2px solid;
     
 }
 body{

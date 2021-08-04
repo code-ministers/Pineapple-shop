@@ -99,7 +99,7 @@ video{
 }
 body{
   width: 100vw;
-  background-color: antiquewhite;
+  background-color: #EDF6E5;
 }
 
 #text h2 {
@@ -110,11 +110,14 @@ body{
 }
 #text p{
   text-align: center;
+  letter-spacing: 1px;
+  line-height: 1.5;
   
 }
 #text{
+  width: 99vw;
   border-radius: 30px;
-  background-color: rgb(11, 117, 117);
+  background-color: #F38BA0;
 }
 #text button{
   margin-left: 42%;
@@ -126,6 +129,10 @@ body{
   text-align: center;
   cursor: pointer;
   border-radius: 40px;
+  background-color: #FFBCBC;
+}
+#text button:hover{
+  opacity: 0.7;
 }
 #saleText{
   margin-top: 30px;
@@ -134,7 +141,7 @@ body{
   font-weight: bolder;
 }
 #onSale{
-  width: 100vw;
+  width: 95vw;
   margin-left: 100px;
   margin-right: 100px;
   display: inline-grid;
@@ -148,7 +155,7 @@ body{
 #onSale div{
   padding: 20px;
   width: 70%;
-  background-color: cornsilk;
+  background-color: #F38BA0;
   border-radius: 30px;
   text-align: center;
 }
@@ -162,6 +169,10 @@ body{
   color: white;
   text-align: center;
   cursor: pointer;
+  background-color: #FFBCBC;
+}
+#onSale div button:hover{
+  opacity: 0.7;
 }
 #onSale div p{
   padding: 3px;
