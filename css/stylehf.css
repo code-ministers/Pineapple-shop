@@ -100,7 +100,7 @@ footer nav ul a{
 }
 #social-media {
   position: absolute;
-  
+  margin-top: -55px;
   right: 25px;
   
 }
@@ -110,4 +110,7 @@ footer nav ul a{
 }
 #social-media div{
   margin-top: 10px;
+}
+#social-media p{
+  text-align: right;
 }
