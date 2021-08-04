@@ -1,7 +1,4 @@
 'use strict';
-
-
-
 const Toy = function (name, src, price, gender) {
   this.name = name;
   this.src = src;
