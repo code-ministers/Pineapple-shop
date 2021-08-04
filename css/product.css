@@ -34,6 +34,9 @@ body{
     position: relative;
     margin-left: 15px;
 }
+*{
+    box-sizing: border-box;
+}
 
 div img{
 box-shadow: rgba(0, 191, 255, 0.986);
@@ -57,7 +60,7 @@ margin-left: 200px;}
 
 main h1{
 text-align: center;
-font-family: 'Indie Flower', cursive;
+/* font-family: 'Indie Flower', cursive; */
 text-shadow: 4px 4px 4px #aaa;
 color: blueviolet;
 font-size: xx-large;

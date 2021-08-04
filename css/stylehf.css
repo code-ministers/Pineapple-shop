@@ -3,12 +3,12 @@
     width: 100vw;
     background-color: darkgrey;
   }
-  #logo img{
+  #logo {
     width: 200px;
     height: 100px;
     border-radius: 10px;
   }
-  header nav ul{
+  #links-ul{
     position: absolute;
     right: 25px;
     top: 25px;
@@ -19,21 +19,22 @@
     list-style: none;
 
   }
-  header nav ul li a{
+  .header-links{
     text-decoration: none;
     padding: 5px;
     color: whitesmoke;
+    font-size: 15px;
   }
-
-  header nav ul li a:hover{
+.header-links:hover{
     background-color:gray;
   }
-header h1 {
+#shop-name {
   position: absolute;
   top: 42px;
   left: 210px;
   font-size: 30px;
   color: whitesmoke;
+  font-weight: bold;
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 footer{
@@ -41,7 +42,7 @@ footer{
   width: 100vw;
   background-color: darkgrey;
 }
-footer nav ul{
+#contact-ul{
   margin-left: 15px;
   padding: 10px;
   display: inline-grid;
@@ -49,23 +50,23 @@ footer nav ul{
   grid-gap: 10px;
   list-style: none;
 }
-footer nav ul a{
+.contact{
   text-decoration: none;
   color:whitesmoke;
 }
 #social-media {
   position: absolute;
-  margin-top: -100px;
+  margin-top: -70px;
   right: 25px;
   
 }
-#social-media a{
+.social-links{
   padding: 5px;
   text-decoration: none;
 }
-#social-media div{
+#social-div{
   margin-top: 10px;
 }
-#social-media p{
+#find-us{
   text-align: right;
 }
