@@ -1,0 +1,72 @@
+
+  header{
+    width: 100vw;
+    background-color: darkgrey;
+  }
+  #logo {
+    width: 200px;
+    height: 100px;
+    border-radius: 10px;
+  }
+  #links-ul{
+    position: absolute;
+    right: 25px;
+    top: 25px;
+    width: 50vw;
+    display: inline-grid;
+    grid-template-columns: repeat(5,1fr);
+    grid-gap: 5px;
+    list-style: none;
+
+  }
+  .header-links{
+    text-decoration: none;
+    padding: 5px;
+    color: whitesmoke;
+    font-size: 15px;
+  }
+.header-links:hover{
+    background-color:gray;
+  }
+#shop-name {
+  position: absolute;
+  top: 42px;
+  left: 210px;
+  font-size: 30px;
+  color: whitesmoke;
+  font-weight: bold;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+footer{
+  margin-top: 30px;
+  width: 100vw;
+  background-color: darkgrey;
+}
+#contact-ul{
+  margin-left: 15px;
+  padding: 10px;
+  display: inline-grid;
+  grid-template-rows: repeat(2,1fr);
+  grid-gap: 10px;
+  list-style: none;
+}
+.contact{
+  text-decoration: none;
+  color:whitesmoke;
+}
+#social-media {
+  position: absolute;
+  margin-top: -70px;
+  right: 25px;
+  
+}
+.social-links{
+  padding: 5px;
+  text-decoration: none;
+}
+#social-div{
+  margin-top: 10px;
+}
+#find-us{
+  text-align: right;
+}
