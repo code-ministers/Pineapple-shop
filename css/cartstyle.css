@@ -1,0 +1,123 @@
+/* some of Style from W3School */
+
+* {
+  box-sizing: border-box;
+}
+
+h1{
+
+    text-align: center;
+    font-size: 50px;
+}
+
+h2 {
+    text-align: center;
+    font-size:larger;
+
+}
+
+h3 {
+    text-align: center;
+    font-size: 25px;
+
+}
+input[type=text], select, textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  resize: vertical;
+}
+
+label {
+  padding: 12px 12px 12px 0;
+  display: inline-block;
+}
+
+button {
+    background-color: #04AA6D;
+  color: white;
+  padding: 12px 20px;
+  border:black;
+  border-radius: 4px;
+  cursor: pointer;
+  /* float: left; */
+  text-align: center;
+}
+
+button:hover {
+    background-color: #04AA6D;
+}
+
+#confirmB {
+
+    margin-left: 13%;
+}
+
+
+
+
+.container {
+  border-radius: 5px;
+  background-color: #f2f2f2;
+  width: 75%;
+  padding: 20px;
+  margin-left:13%;
+}
+
+.col-25 {
+  float: left;
+  width: 15%;
+  margin-top: 6px;
+}
+
+.col-75 {
+  float: left;
+  width: 75%;
+  margin-top: 6px;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+ 
+/* Responsive layout - when the screen is less than 600px wide, make the two columns stack on top of each other instead of next to each other */
+/* @media screen and (max-width: 600px) {
+  .col-25, .col-75, input[type=submit] {
+    width: 100%;
+    margin-top: 0;
+  }
+} */ 
+
+
+
+
+  #cart {
+    font-family: Arial, Helvetica, sans-serif;
+    border-collapse: collapse;
+    width: 75%;
+    text-align: center;
+    margin-left:13%;
+   
+  }
+  
+  
+  #cart td, #cart th {
+    border: 1px solid #ddd;
+    padding: 8px;
+  }
+  
+  #cart tr:nth-child(even){background-color: #f2f2f2;}
+  
+  #cart tr:hover {background-color: #ddd;}
+  
+  #cart th {
+    padding-top: 12px;
+    padding-bottom: 12px;
+    text-align: center;
+    background-color: #04AA6D;
+    color: white;
+  }

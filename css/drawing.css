@@ -1,13 +1,14 @@
-p{
+#para{
     margin-top: 70px;
     margin-left: 350px;
     width: 50%;
     padding: 10px;
     font-size: 16pt;
-    color: BE0000;
+    color: F38BA0;
     text-align:center;
     font-family:cursive;
 }
+
 #drawings{
     position: absolute;
     margin-top: 20px;
@@ -16,6 +17,7 @@ p{
     border: 2px solid;
     
 }
+
 body{
-    background-color:rgb(230, 217, 193) ;
+    background-color:EDF6E5;
 }
