@@ -1,3 +1,4 @@
+
 #Adress{
     height: 75px;
     width: 300px;
@@ -69,3 +70,6 @@ footer nav ul li{
    padding-right: 10%; */
    font-size: 150%;
 }
+    border-collapse: collapse;
+   } 
+
