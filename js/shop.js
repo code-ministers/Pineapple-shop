@@ -58,30 +58,30 @@ Toy.prototype.girlToy = function (gender) {
 
 
 function generateProduct() {
-  new Toy('blue-elephant', '/img/boy/blue-elephant.png', 5 , 'b');
-  new Toy('building-blocks', '/img/boy/building-blocks.png', 4, 'b');
-  new Toy('car', '/img/boy/car.png ', 3, 'b');
+  new Toy('blue-elephant', 'img/boy/blue-elephant.png', 5 , 'b');
+  new Toy('building-blocks', 'img/boy/building-blocks.png', 4, 'b');
+  new Toy('car', 'img/boy/car.png ', 3, 'b');
   new Toy('clipart-lion', 'img/boy/clipart-lion.png', 5, 'b');
-  new Toy('elephant', '/img/boy/elephant.png', 6, 'b');
-  new Toy('on-the-beach', '/img/boy/on-the-beach.png', 7, 'b');
-  new Toy('pizzle-truck', '/img/boy/puzzle-truck.png', 10, 'b');
-  new Toy('ring-stack', '/img/boy/ring-stack.png', 3, 'b');
-  new Toy('robot', '/img/boy/robot.png ', 12, 'b');
-  new Toy('school-bus', '/img/boy/school-bus.png ', 6, 'b');
-  new Toy('rocking-horse', '/img/boy/rocking-horse.png', 20, 'b');
-  new Toy('superMan', '/img/boy/superMan.png ', 7, 'b');
-  new Toy('homeGirls', '/img/girl/homeGirls.png', 12, 'g');
-  new Toy('horseForGirls', '/img/girl/hoursForGirls.png', 15, 'g');
-  new Toy('lego-minnie-mouse', '/img/girl/lego-minnie-mouse.png ', 15, 'g');
-  new Toy('newGirls-toys', '/img/girl/newGirls-toys.png ', 7, 'g');
-  new Toy('planForGirls', '/img/girl/planForGirls.png ', 5, 'g');
-  new Toy('DollToys', '/img/girl/DollToys.png ', 4, 'g');
-  new Toy('teddy-bear', '/img/girl/teddy-bear.png ', 5, 'g');
-  new Toy('tedyBear-toy', '/img/girl/tedyBear-toy.png ', 5, 'g');
-  new Toy('tedybear', '/img/girl/tedybear.png ', 5, 'g');
-  new Toy('toddler-girls', '/img/girl/toddler-girls.png ', 8, 'g');
-  new Toy('toyfordrgirls', '/img/girl/toyfordrgirls.png ', 6, 'g');
-  new Toy('toys-rabbit', '/img/girl/toys-rabbit.png ', 5, 'g');
+  new Toy('elephant', 'img/boy/elephant.png', 6, 'b');
+  new Toy('on-the-beach', 'img/boy/on-the-beach.png', 7, 'b');
+  new Toy('pizzle-truck', 'img/boy/puzzle-truck.png', 10, 'b');
+  new Toy('ring-stack', 'img/boy/ring-stack.png', 3, 'b');
+  new Toy('robot', 'img/boy/robot.png ', 12, 'b');
+  new Toy('school-bus', 'img/boy/school-bus.png ', 6, 'b');
+  new Toy('rocking-horse', 'img/boy/rocking-horse.png', 20, 'b');
+  new Toy('superMan', 'img/boy/superMan.png ', 7, 'b');
+  new Toy('homeGirls', 'img/girl/homeGirls.png', 12, 'g');
+  new Toy('horseForGirls', 'img/girl/hoursForGirls.png', 15, 'g');
+  new Toy('lego-minnie-mouse', 'img/girl/lego-minnie-mouse.png ', 15, 'g');
+  new Toy('newGirls-toys', 'img/girl/newGirls-toys.png ', 7, 'g');
+  new Toy('planForGirls', 'img/girl/planForGirls.png ', 5, 'g');
+  new Toy('DollToys', 'img/girl/DollToys.png ', 4, 'g');
+  new Toy('teddy-bear', 'img/girl/teddy-bear.png ', 5, 'g');
+  new Toy('tedyBear-toy', 'img/girl/tedyBear-toy.png ', 5, 'g');
+  new Toy('tedybear', 'img/girl/tedybear.png ', 5, 'g');
+  new Toy('toddler-girls', 'img/girl/toddler-girls.png ', 8, 'g');
+  new Toy('toyfordrgirls', 'img/girl/toyfordrgirls.png ', 6, 'g');
+  new Toy('toys-rabbit', 'img/girl/toys-rabbit.png ', 5, 'g');
 
 }
 
