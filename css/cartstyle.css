@@ -40,13 +40,13 @@ button {
   padding: 12px 20px;
   border:black;
   border-radius: 4px;
-  cursor: pointer;
+  /* cursor: pointer; */
   /* float: left; */
   text-align: center;
 }
 
 button:hover {
-    background-color: #04AA6D;
+    background-color:green;
 }
 
 #confirmB {
